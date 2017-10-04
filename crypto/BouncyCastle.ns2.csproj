@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="test\**" />
+    <EmbeddedResource Remove="test\**" />
+    <None Remove="test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="checklist.txt" />
+    <None Remove="Contributors.html" />
+    <None Remove="crypto.dotnet.nuget.targets" />
+    <None Remove="crypto.dotnet.project.json" />
+    <None Remove="crypto.dotnet.project.lock.json" />
+    <None Remove="License.html" />
+    <None Remove="NBuild.build" />
+    <None Remove="Readme.html" />
+    <None Remove="testcfg.nunit" />
+  </ItemGroup>
+
+</Project>

@@ -13,6 +13,8 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
+#if NETSTANDARD2_0
+#else
 [assembly: AssemblyTitle("BouncyCastle.Crypto")]
 [assembly: AssemblyDescription("Bouncy Castle Cryptography API")]
 [assembly: AssemblyConfiguration("")]
@@ -21,6 +23,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright (C) 2000-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+
 
 //
 // Version information for an assembly consists of the following four values:
@@ -36,6 +39,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.8.1.0")]
 [assembly: AssemblyFileVersion("1.8.15362.1")]
 [assembly: AssemblyInformationalVersion("1.8.1")]
+
+#endif
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the
